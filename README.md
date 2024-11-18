@@ -28,7 +28,7 @@ from matplotlib import pyplot as plt
 Create the Text using cv2.putText
 ```
 img = np.ones((300, 600), dtype="uint8") * 255  # Create a white image
-cv2.putText(img, 'VIJAY', (150, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 0, 0), 5)  # Add black text 'Sam'
+cv2.putText(img, 'SANJAY', (150, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 0, 0), 5)  # Add black text 'Sam'
 noise = np.random.rand(*img.shape)
 img[noise < 0.05] = 0  # Random black pixels (salt)
 img[noise > 0.95] = 255  # Random white pixels (pepper)
